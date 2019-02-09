@@ -2,6 +2,9 @@
 
 namespace Doggo\Model;
 
+use SilverStripe\Assets\Image;
+use SilverStripe\AssetAdmin\Forms\UploadField;    
+
 class Park extends \SilverStripe\ORM\DataObject
 {
     private static $table_name = 'Park';
@@ -16,7 +19,16 @@ class Park extends \SilverStripe\ORM\DataObject
         'GeoJson' => 'Text',
         'FeatureOnOffLeash' => "Enum(array('On-leash', 'Off-leash'), 'On-leash')",
         'IsToPurge' => 'Boolean',
+		'Approved' => 'Boolean',
     ];
+	
+	private static $has_one = array(
+			'AreaPhoto' => Image::class
+	);
+
+	private static $owns = [
+		'AreaPhoto'
+	];	
 
     private static $summary_fields = [
         'Title' => 'Title',

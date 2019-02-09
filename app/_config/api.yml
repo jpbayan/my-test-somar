@@ -3,4 +3,5 @@ Name: api
 ---
 Doggo\Task\FetchParksTask:
   api_title: 'Wellington City Council'
-  api_url: 'http://data-wcc.opendata.arcgis.com/datasets/ce44eb0d60be45dfbebcc49bcc5ef275_0.geojson'
+  api_url: 'http://data-pcc.opendata.arcgis.com/datasets/155335485c3c43ec958e9909e34b2249_18.geojson'
+  #api_url: 'http://data-wcc.opendata.arcgis.com/datasets/ce44eb0d60be45dfbebcc49bcc5ef275_0.geojson'
