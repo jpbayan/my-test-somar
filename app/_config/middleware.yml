@@ -1,0 +1,10 @@
+---
+Name: middleware
+After:
+- requestprocessors
+---
+SilverStripe\Core\Injector\Injector:
+  SilverStripe\Control\Director:
+    properties:
+      Middlewares:
+        CrossOriginMiddleware: %$CrossOriginMiddleware
